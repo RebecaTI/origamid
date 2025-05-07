@@ -1,13 +1,7 @@
 "use strict";
-let total = 200;
-total = '4000';
-function isNumber(value) {
-    if (typeof value === 'number') {
-        return true;
-    }
-    else {
-        return false;
-    }
+function preencherDados(dados) {
+    document.body.innerHTML = '
+        < div > Teste < /div>;
+    ';;
 }
-const button = document.querySelector('button');
-button?.click();
+preencherDados({});
