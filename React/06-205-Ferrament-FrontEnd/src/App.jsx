@@ -1,15 +1,20 @@
 import React from 'react'
-import Produto from './Produto.jsx'
-import UserContext from './UserContext.jsx'
+import useLocalStorage from './useLocalStorage'
 
 const App = () => {
-  console.log(UserContext)
+  const [produto, setProduto] = useLocalStorage('produto', '');
+
+  function handleClick({ target }) {
+    setProduto(target.innerText)
+  }
+
   return (
-    <UserContext.Provider value={{ nome: "Rebeca" }}>
-      <Produto />
-    </UserContext.Provider>
+    <div>
+      <p>Produto preferido: {produto}</p>
+      <button onClick={handleClick}> notebook </button>
+      <button onClick={handleClick}> smartphone </button>
+    </div>
   )
 }
 
 export default App
-// Origamid 0305 UseContext1 05:56
