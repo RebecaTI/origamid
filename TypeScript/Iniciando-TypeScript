@@ -1,3 +1,7 @@
+PARA COMPILAR
+tsc -w
+
+
 https://www.origamid.com/slide/typescript-para-iniciantes/#/0104-typescript-ferramentas/2
 
 npm install -g typescript
@@ -10,5 +14,3 @@ tsc --init
     "strict": true
   }
 }
-
-tsc -w
